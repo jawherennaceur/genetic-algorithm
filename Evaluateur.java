@@ -1,6 +1,7 @@
 import java.util.function.BiConsumer;
 import java.util.function.Supplier;
 
+@SuppressWarnings("hiding")
 public class Evaluateur<Individu,V> {
     private Supplier<V> fabriqueMotMystere;
     private V motMystere;
