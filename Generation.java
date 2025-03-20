@@ -41,6 +41,10 @@ public class Generation<T extends Individu<?>> implements Serializable {
     public Integer nbIndividus(){
         return this.individus.size();
     }
+    public List<T> getIndividus() {
+        return new ArrayList<>(this.individus);
+    }
+    
     public void removeNotSelectedIndividus() {
         List<T> individus = new ArrayList<T>();
         for (T individu : this.individus) {
@@ -103,4 +107,5 @@ private static final Logger logger = Logger.getLogger(Generation.class.getName()
         }
         return bestIndividu;
     }
+    
 }
