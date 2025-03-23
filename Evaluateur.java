@@ -23,4 +23,8 @@ public class Evaluateur<Individu,V> {
     public void evaluer(Individu individu){
         this.evaluateurIndividu.accept(individu,motMystere);
     }
+    public V getMotMystere() {
+        return motMystere;
+    }
+    
 }
